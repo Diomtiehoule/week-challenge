@@ -1,0 +1,47 @@
+
+.pulse
+{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 0 auto;
+   position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+    animation: animate 1.5s alternate infinite ;
+}
+
+@keyframes animate{
+    0%{
+        background-color: green;
+        -webkit-transform: scale(0.4);
+        border-radius: 100%;
+    }
+    20%{
+        background-color: greenyellow;
+        -webkit-transform: scale(0.5);
+        border-radius: 80%;
+    }
+    40%{
+        background-color: yellow;
+        -webkit-transform: scale(0.6);
+        border-radius: 60%;
+    }
+    60%{
+        background-color: orangered;
+        -webkit-transform: scale(0.7);
+        border-radius: 40%;
+    }
+    80%{
+        background-color: orange;
+        -webkit-transform: scale(0.8);
+        border-radius: 20%;
+    }
+    100%{
+        background-color: red;
+        -webkit-transform: scale(0.9);
+        border-radius: 0%;
+    }
+}
